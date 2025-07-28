@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+
+.container {
+    width: 80%;
+    max-width: 500px;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.container .heading {
+    text-align: center;
+}
+
+.container-input {
+    width: 100%;
+    margin: 20px auto;
+}
+
+.input-div input,
+.input-div textarea {
+    margin-top: 10px;
+    width: 100%;             /* خليه ياخد عرض parent */
+    padding: 12px;           /* مسافة داخلية باش يكون مريح */
+    box-sizing: border-box;  /* باش padding مايزيدش على العرض */
+    font-size: 1rem;
+}
+
+.container-button {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.container-button .submit-btn {
+    width: 100%;              /* عرض كامل */
+    max-width: 200px;         /* لكن ميتعداش 200px */
+    height: 40px;
+    padding: 10px 0;
+    color: black;
+    font-weight: 600;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.container-button .submit-btn:hover {
+    background-color: #222;
+    color: white;
+}
+
+@media (max-width: 599px) {
+    .container {
+        padding: 20px;
+    }
+
+    .heading {
+        font-size: 1.5rem;
+    }
+
+    .container-button {
+        margin-top: 40px;
+    }
+
+    .container-button .submit-btn:active {
+    background-color: #222;
+    color: #fff;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1024px ) {
+    
+    .container-button .submit-btn:active {
+    background-color: #222;
+    color: #fff;
+    }
+}

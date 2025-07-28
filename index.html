@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conatct Me</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="container">
+    <h1 class="heading">Contact Us</h1>
+    <form action="https://formspree.io/f/xqalbkdn" method="POST">
+        <div class="container-input">
+            <label for="Name">Name</label>
+            <div class="input-div">
+                <input type="text" name="name" required autofocus>
+            </div>
+        </div>
+
+        <div class="container-input">
+            <label for="Email">Email</label>
+            <div class="input-div">
+                <input type="email" name="email" required>
+            </div>
+        </div>
+
+        <div class="container-input">
+            <label for="Message">Message</label>
+            <div class="input-div">
+                <textarea name="message" required></textarea>
+            </div>
+        </div>
+
+        <div class="container-button">
+            <button type="submit" class="submit-btn">Message Me</button>
+        </div>
+        
+    </form>
+    </div>
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
